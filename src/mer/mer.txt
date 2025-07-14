@@ -1,0 +1,61 @@
+- Entidades
+
+   ° Catálogo
+   ° Inventário
+   ° Usuário
+   ° Livro
+   ° Aluguel
+
+- Atributos
+
+   ° Catálogo
+      -UUID
+      -Titulo do Livro
+      -Autor
+      -ISBN
+      -Cópias Disponíveis
+      -Informações{
+         -Gênero
+         -Editora
+         -Ano Publicação
+      }
+
+   ° Usuário
+      -UUID
+      -Nome
+      -Informações{
+         -Endereço{
+            -Rua
+            -Bairro
+            -CEP
+            -Cidade
+            -Estado
+         }
+         -E-mail
+         -Telefone
+      }
+
+   ° Livro
+      -UUID
+      -Titulo do Livro
+      -Autor
+      -ISBN
+      -Cópias Disponíveis
+      -Informações{
+         -Gênero
+         -Editora
+         -Ano Publicação
+      }
+
+   ° Aluguel
+      -UUID Do Empréstimo
+      -Data Do Empréstimo
+      -Data De Devolução Prevista
+      -Data De Devolução
+      -Status do Empréstimo (Emprestado, Devolvido, Atrasado)
+
+Relacionamentos:
+
+- Usuário realiza Aluguel
+- Catálogo contém Livro
+- Livro possui Inventário
